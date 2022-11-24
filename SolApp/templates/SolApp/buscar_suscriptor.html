@@ -1,0 +1,22 @@
+<form action="" method="get">
+
+    <input type="text" name="email" id="email">
+
+    <input type="submit" value="Buscar">
+
+
+</form>
+
+{% if  suscriptores %}
+
+    <ul>
+    {% for suscriptor in suscriptores %}
+        <li>Suscriptor {{suscriptor.nombre}}, con mail {{suscriptor.email}}.<li>
+    {% endfor %}
+    <ul>
+
+{% else %}
+
+    <p>No hay datos</p>
+
+{% endif %}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Blog Home - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'SolApp/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="https://dam.malt.com/c851413a-d46c-48ba-aead-026008bf1390?gravity=face&func=face&face_margin=60&w=720&h=720&force_format=jpg">Maria Sol Pucciarelli</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="{% url 'suscriptor' %}">Suscribirse</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'posteo' %}">Postea</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'buscar posteo' %}">Buscar Post</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="{% url 'buscar suscriptor' %}">Buscar Suscriptor</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page header with logo and tagline-->
+            <div class="container">
+                <div class="text-center my-5">
+                    <h1 class="fw-bolder">Welcome to Rock and Blog!</h1>
+                    <p class="lead mb-0">Blog para opiniones sobre nuevos discos</p>
+                </div>
+            </div>
+        </header>
+        <!-- Page content-->
+        <div class="container">
+            <div class="row">
+                <!-- Blog entries-->
+                <div class="col-lg-8">
+                    <!-- Featured blog post-->
+                    <div class="card mb-4">
+                        <a href="#!"><img class="card-img-top" src="https://madamemichu.com/images/174258/main_original.jpg" alt="..." /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">Noviembre, 2022</div>
+                            <h2 class="card-title">The Car, lo nuevo de Arctic Monkeys</h2>
+                            <p class="card-text">The Car es el séptimo álbum de estudio de la banda de rock inglesa Arctic Monkeys, publicado el 21 de octubre de 2022 por Domino Records. El disco está compuesto por el vocalista de la banda, Alex Turner, con producción de James Ford, y fue grabado en las ciudades de París y Londres en el verano de 2021</p>
+                            <a class="btn btn-primary" href="{% url 'the car opinion' %}">Opina</a>
+                        </div>
+                    </div>
+                    <!-- Nested row for non-featured blog posts-->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="card-img-top" src="https://th.bing.com/th/id/R.b6f03a9e731ee034a882f7ae01a601d6?rik=%2f8hJ2LrKiaa5zw&pid=ImgRaw&r=0" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">Mayo, 2022</div>
+                                    <h2 class="card-title h4">Desde Canadá, con amor</h2>
+                                    <p class="card-text">We es el sexto álbum de la banda Arcade Fire, que fue lanzado el 6 de mayo de 2022 a través de Columbia Records. Producido por Nigel Godrich y los miembros de la banda Win Butler y Régine Chassagne, el álbum fue grabado en Nueva Orleans, El Paso, Texas y Mount Desert Island en Maine, y fue precedido por el sencillo "The Lightning I, II". El álbum toma su nombre de la novela distópica rusa We de Yevgeny Zamyatin.
+
+                                        Es el último álbum que presenta al multiinstrumentista Will Butler, quien dejó la banda en 2021 poco después de su finalización.</p>
+                                    <a class="btn btn-primary" href="{% url 'we opinion' %}">Opina</a>
+                                </div>
+                            </div>
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="card-img-top" src="https://masdecibelios.es/wp-content/uploads/2022/03/muse-will-of-the-people.jpg.webp" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">Agosto, 2022</div>
+                                    <h2 class="card-title h4">Muse y el himno político con Will of th People</h2>
+                                    <p class="card-text">La banda británica Muse ha adoptado una gran variedad de personalidades a lo largo de su vida, que ya se acerca a las tres décadas. Desde el rock alternativo más vanguardista hasta el revival del rock de estadio y los impulsores del prog de la era espacial, Muse ha abarcado todo el espectro. En el noveno disco del grupo, Will of the People, el trío ha logrado una hazaña bastante difícil al crear un disco que toma todos esos sonidos pasados y los mezcla de una manera magistralmente cohesiva que reconoce el pasado y traza un camino.</p>
+                                    <a class="btn btn-primary" href="{% url 'wotp opinion' %}">Opina</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="card-img-top" src="https://indiehoy.com/wp-content/uploads/2022/10/red-hot-chili-peppers.jpg" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">Octubre, 2022</div>
+                                    <h2 class="card-title h4">El regreso (nuevamente) de Frusciante</h2>
+                                    <p class="card-text">Después del lanzamiento de Unlimited Love en abril de este año, los Red Hot Chili Peppers están de vuelta con Return of the Dream Canteen, su segundo álbum del 2022. Y se siente tan fresco como su antecesor, en gran medida debido al regreso de Frusciante a su puesto original en la banda. Cada una de las canciones parecer haber emergido de largas sesiones de improvisación, zapadas exhaustivas, que confluyen en el reencuentro de una química inevitable y orgánica, la que queda impresa en un groove casi identitario.</p>
+                                    <a class="btn btn-primary" href="{% url 'rhcp opinion' %}">Opina</a>
+                                </div>
+                            </div>
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="card-img-top" src="https://jenesaispop.com/wp-content/uploads/2022/09/phoenix-alpha-zulu-2.jpg" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">Noviembre, 2022</div>
+                                    <h2 class="card-title h4">Phoenix, electrónico y bailable pero con rasgos de oscuridad</h2>
+                                    <p class="card-text">Phoenix han detallado su nuevo disco, ‘Alpha Zulu’, su primer disco en 5 años. Phoenix ha producido el álbum en un estudio montado en el Museo de las Artes Decorativas de París, situado en el interior del Louvre.
+
+                                        El nuevo single de ‘Alpha Zulu’ se llama ‘Tonight’, ya puede escucharse y llega con la particularidad de contar con un artista invitado por primera vez en la carrera de Phoenix. Ese no es otro que Ezra Koenig, vocalista de Vampire Weekend.</p>
+                                        <a class="btn btn-primary" href="{% url 'phoenix opinion' %}">Opina</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination-->
+                <!-- Side widgets-->
+                <!-- aca estabas las barras de busqueda, pero se me complicó. La busqueda la pasé al nav-->
+                    <!-- Side widget-->
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src={% static "SolApp/js/scripts.js" %}></script>
+    </body>
+</html>

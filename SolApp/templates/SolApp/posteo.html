@@ -1,0 +1,11 @@
+<form action="" method="post"> {% csrf_token %}
+
+    <h2>Postea</h2>
+    <h3>Cuentanos que te pareció lo nuevo que hayas escucahdo!</h3>
+
+    <table>
+        {{formulario.as_table}}
+    </table>
+
+    <button type="submit" value="Enviar">Enviar</button>
+</form>

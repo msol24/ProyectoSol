@@ -1,0 +1,12 @@
+<form action="" method="post"> {% csrf_token %}
+
+    <h2>Return of the Dream Canteen</h2>
+    <h2>Red Hot Chili Peppers</h2>
+    <h3>Cuentanos que te pareció!</h3>
+
+    <table>
+        {{formulario.as_table}}
+    </table>
+
+    <button type="submit" value="Enviar">Enviar</button>
+</form>
